@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Splash
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,13 +22,14 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
+        components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Splash))
         username = New RichTextBox()
         password = New RichTextBox()
         Button1 = New Button()
-        RichTextBox1 = New RichTextBox()
-        RichTextBox2 = New RichTextBox()
-        Button2 = New Button()
+        Label1 = New Label()
+        MyProgressBar = New ProgressBar()
+        Timer1 = New Timer(components)
         SuspendLayout()
         ' 
         ' username
@@ -63,59 +64,56 @@ Partial Class Form1
         Button1.Text = "LOGIN"
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' RichTextBox1
+        ' Label1
         ' 
-        RichTextBox1.BackColor = Color.Teal
-        RichTextBox1.Location = New Point(701, 256)
-        RichTextBox1.Name = "RichTextBox1"
-        RichTextBox1.Size = New Size(243, 53)
-        RichTextBox1.TabIndex = 3
-        RichTextBox1.Text = ""
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Teal
+        Label1.Font = New Font("Algerian", 48F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.Gold
+        Label1.Location = New Point(261, 417)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(436, 71)
+        Label1.TabIndex = 4
+        Label1.Text = "MADE BY VMI"
         ' 
-        ' RichTextBox2
+        ' MyProgressBar
         ' 
-        RichTextBox2.BackColor = Color.Teal
-        RichTextBox2.Location = New Point(701, 360)
-        RichTextBox2.Name = "RichTextBox2"
-        RichTextBox2.Size = New Size(243, 53)
-        RichTextBox2.TabIndex = 4
-        RichTextBox2.Text = ""
+        MyProgressBar.Cursor = Cursors.AppStarting
+        MyProgressBar.ForeColor = Color.FromArgb(CByte(192), CByte(192), CByte(0))
+        MyProgressBar.Location = New Point(224, 259)
+        MyProgressBar.Name = "MyProgressBar"
+        MyProgressBar.Size = New Size(555, 42)
+        MyProgressBar.TabIndex = 3
         ' 
-        ' Button2
+        ' Timer1
         ' 
-        Button2.BackColor = Color.Gold
-        Button2.ForeColor = Color.Teal
-        Button2.Location = New Point(548, 494)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(199, 64)
-        Button2.TabIndex = 5
-        Button2.Text = "Login"
-        Button2.UseVisualStyleBackColor = False
         ' 
-        ' Form1
+        ' Splash
         ' 
         AutoScaleDimensions = New SizeF(25F, 43F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Teal
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
-        ClientSize = New Size(974, 625)
-        Controls.Add(Button2)
-        Controls.Add(RichTextBox2)
-        Controls.Add(RichTextBox1)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(980, 624)
+        Controls.Add(Label1)
+        Controls.Add(MyProgressBar)
         Controls.Add(Button1)
         Controls.Add(password)
         Controls.Add(username)
+        DoubleBuffered = True
         Font = New Font("Century Schoolbook", 27.75F, FontStyle.Bold, GraphicsUnit.Point)
         Margin = New Padding(11, 9, 11, 9)
-        Name = "Form1"
+        Name = "Splash"
         Text = "Form1"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents username As RichTextBox
     Friend WithEvents password As RichTextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents RichTextBox2 As RichTextBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents MyProgressBar As ProgressBar
+    Friend WithEvents Timer1 As Timer
 End Class
