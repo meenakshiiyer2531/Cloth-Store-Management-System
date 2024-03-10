@@ -2,18 +2,18 @@
 The Cloth Store Management System is a desktop application built using VB.NET and SQL for managing a cloth store's inventory and sales. It provides functionality for administrators and employees to log in, manage products, customers, employees, and process sales. 
 
 # Features
-## Login: 
-Secure login functionality for administrators and employees.
-## Dashboard: 
-Separate dashboards for administrators and employees with relevant functionalities.
-## Product Management: 
-Add, update, and delete products from the inventory.
-## Customer Management: 
-Manage customer information for processing sales.
-## Employee Management: 
-Manage employee information and access levels.
-## Sales Processing: 
-Process sales transactions, including adding items to the cart and generating bills.
+ 1. Login: Secure login functionality for administrators and employees.
+ 
+ 2. Dashboard: Separate dashboards for administrators and employees with relevant functionalities.
+ 
+ 3. Product Management: Add, update, and delete products from the inventory.
+ 
+ 4. Customer Management: Manage customer information for processing sales.
+
+ 5. Employee Management: Manage employee information and access levels.
+ 
+ 6. Sales Processing: Process sales transactions, including adding items to the cart and generating bills.
+ 
 
 # Installation
 Clone the repository to your local machine.
