@@ -22,7 +22,7 @@ Partial Class PurchaseOrdA
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(PurchaseOrdA))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PurchaseOrdA))
         TextBox5 = New TextBox()
         TextBox4 = New TextBox()
         TextBox3 = New TextBox()
@@ -33,6 +33,8 @@ Partial Class PurchaseOrdA
         Button2 = New Button()
         TextBox6 = New TextBox()
         Button1 = New Button()
+        DataGridView1 = New DataGridView()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TextBox5
@@ -127,6 +129,18 @@ Partial Class PurchaseOrdA
         Button1.TabIndex = 18
         Button1.UseVisualStyleBackColor = False
         ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.AllowUserToAddRows = False
+        DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(402, 87)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.ReadOnly = True
+        DataGridView1.RowTemplate.Height = 25
+        DataGridView1.Size = New Size(370, 338)
+        DataGridView1.TabIndex = 19
+        ' 
         ' PurchaseOrdA
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -134,6 +148,7 @@ Partial Class PurchaseOrdA
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 450)
+        Controls.Add(DataGridView1)
         Controls.Add(Button1)
         Controls.Add(TextBox6)
         Controls.Add(TextBox5)
@@ -147,6 +162,7 @@ Partial Class PurchaseOrdA
         DoubleBuffered = True
         Name = "PurchaseOrdA"
         Text = "PurchaseOrdA"
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -161,4 +177,5 @@ Partial Class PurchaseOrdA
     Friend WithEvents Button2 As Button
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

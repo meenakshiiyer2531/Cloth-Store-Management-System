@@ -6,9 +6,9 @@ Public Class Adminb
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
+        Hide
         Dim customer = New CustomerA
-        customer.Show()
+        customer.Show
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -39,5 +39,11 @@ Public Class Adminb
         Me.Hide()
         Dim employee = New EmployeeA
         employee.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Me.Hide()
+        Dim login = New Login
+        login.Show()
     End Sub
 End Class

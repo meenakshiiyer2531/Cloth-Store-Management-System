@@ -1,12 +1,11 @@
-﻿Imports MySql.Data.MySqlClient
-Public Class ProductA
+﻿Public Class productE
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Dim dashboard = New Adminb
+        Dim dashboard = New employeedasboard
         dashboard.Show()
     End Sub
 
-    Private Sub ProductA_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub ProductE_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         reload("SELECT * FROM products ", DataGridView1)
     End Sub
 
@@ -76,6 +75,4 @@ Public Class ProductA
         TextBox2.Text = DataGridView1.CurrentRow.Cells(7).Value
         TextBox1.Text = DataGridView1.CurrentRow.Cells(8).Value
     End Sub
-
-
 End Class

@@ -36,6 +36,8 @@ Partial Class ProductA
         Button3 = New Button()
         Button2 = New Button()
         Button1 = New Button()
+        DataGridView1 = New DataGridView()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -154,6 +156,17 @@ Partial Class ProductA
         Button1.TabIndex = 12
         Button1.UseVisualStyleBackColor = False
         ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.AllowUserToAddRows = False
+        DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(503, 95)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.RowTemplate.Height = 25
+        DataGridView1.Size = New Size(464, 362)
+        DataGridView1.TabIndex = 14
+        ' 
         ' ProductA
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -161,6 +174,7 @@ Partial Class ProductA
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1000, 581)
+        Controls.Add(DataGridView1)
         Controls.Add(Button1)
         Controls.Add(Button4)
         Controls.Add(Button3)
@@ -177,6 +191,7 @@ Partial Class ProductA
         DoubleBuffered = True
         Name = "ProductA"
         Text = "ProductA"
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -194,4 +209,5 @@ Partial Class ProductA
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

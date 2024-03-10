@@ -1,14 +1,12 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-
-Public Class CustomerA
-    Private Sub CustomerA_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class customerE
+    Private Sub CustomerE_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         reload("SELECT * FROM customer ", DataGridView1)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Dim dashboard = New Adminb
-        dashboard.Show()
+        Dim dashboard1 = New employeedasboard
+        dashboard1.Show()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click

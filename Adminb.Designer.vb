@@ -22,13 +22,14 @@ Partial Class Adminb
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Adminb))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Adminb))
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
         Button5 = New Button()
         Button6 = New Button()
+        Button7 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -44,7 +45,7 @@ Partial Class Adminb
         ' Button2
         ' 
         Button2.BackColor = Color.Gold
-        Button2.Location = New Point(401, 220)
+        Button2.Location = New Point(465, 220)
         Button2.Name = "Button2"
         Button2.Size = New Size(160, 33)
         Button2.TabIndex = 1
@@ -54,7 +55,7 @@ Partial Class Adminb
         ' Button3
         ' 
         Button3.BackColor = Color.Gold
-        Button3.Location = New Point(727, 220)
+        Button3.Location = New Point(814, 220)
         Button3.Name = "Button3"
         Button3.Size = New Size(142, 33)
         Button3.TabIndex = 2
@@ -64,7 +65,7 @@ Partial Class Adminb
         ' Button4
         ' 
         Button4.BackColor = Color.Gold
-        Button4.Location = New Point(77, 549)
+        Button4.Location = New Point(116, 549)
         Button4.Name = "Button4"
         Button4.Size = New Size(163, 30)
         Button4.TabIndex = 3
@@ -74,7 +75,7 @@ Partial Class Adminb
         ' Button5
         ' 
         Button5.BackColor = Color.Gold
-        Button5.Location = New Point(401, 549)
+        Button5.Location = New Point(475, 549)
         Button5.Name = "Button5"
         Button5.Size = New Size(160, 30)
         Button5.TabIndex = 4
@@ -84,12 +85,22 @@ Partial Class Adminb
         ' Button6
         ' 
         Button6.BackColor = Color.Gold
-        Button6.Location = New Point(727, 549)
+        Button6.Location = New Point(814, 549)
         Button6.Name = "Button6"
         Button6.Size = New Size(142, 30)
         Button6.TabIndex = 5
         Button6.Text = "PURCHASE ORDER"
         Button6.UseVisualStyleBackColor = False
+        ' 
+        ' Button7
+        ' 
+        Button7.BackColor = Color.Gold
+        Button7.Location = New Point(405, 297)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(289, 33)
+        Button7.TabIndex = 6
+        Button7.Text = "BACK TO LOGIN"
+        Button7.UseVisualStyleBackColor = False
         ' 
         ' Adminb
         ' 
@@ -97,7 +108,8 @@ Partial Class Adminb
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(975, 651)
+        ClientSize = New Size(1093, 694)
+        Controls.Add(Button7)
         Controls.Add(Button6)
         Controls.Add(Button5)
         Controls.Add(Button4)
@@ -116,4 +128,5 @@ Partial Class Adminb
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class

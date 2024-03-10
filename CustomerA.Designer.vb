@@ -22,7 +22,7 @@ Partial Class CustomerA
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(CustomerA))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CustomerA))
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
@@ -32,6 +32,8 @@ Partial Class CustomerA
         TextBox3 = New TextBox()
         TextBox4 = New TextBox()
         TextBox5 = New TextBox()
+        DataGridView1 = New DataGridView()
+        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Button1
@@ -118,6 +120,18 @@ Partial Class CustomerA
         TextBox5.Size = New Size(142, 23)
         TextBox5.TabIndex = 8
         ' 
+        ' DataGridView1
+        ' 
+        DataGridView1.AllowUserToAddRows = False
+        DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Location = New Point(372, 124)
+        DataGridView1.Name = "DataGridView1"
+        DataGridView1.ReadOnly = True
+        DataGridView1.RowTemplate.Height = 25
+        DataGridView1.Size = New Size(442, 306)
+        DataGridView1.TabIndex = 9
+        ' 
         ' CustomerA
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -125,6 +139,7 @@ Partial Class CustomerA
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(826, 492)
+        Controls.Add(DataGridView1)
         Controls.Add(TextBox5)
         Controls.Add(TextBox4)
         Controls.Add(TextBox3)
@@ -137,6 +152,7 @@ Partial Class CustomerA
         DoubleBuffered = True
         Name = "CustomerA"
         Text = "CustomerA"
+        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -150,4 +166,5 @@ Partial Class CustomerA
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
