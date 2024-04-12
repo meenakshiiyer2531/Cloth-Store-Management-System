@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
 Module database
-    Public serverstring As String = "Server=localhost; user id= root; password=; database=cloth store management"
+    Public serverstring As String = "Server=localhost; user id= vmi; password=meenu2002; database=vmi"
     Public strcon As MySqlConnection = New MySqlConnection(serverstring)
     Public cmd As MySqlCommand = New MySqlCommand
     Public da As MySqlDataAdapter

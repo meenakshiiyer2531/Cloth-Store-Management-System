@@ -1,8 +1,7 @@
 ﻿Public Class productE
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Dim dashboard = New employeedasboard
-        dashboard.Show()
+
     End Sub
 
     Private Sub ProductE_Load(sender As Object, e As EventArgs) Handles MyBase.Load

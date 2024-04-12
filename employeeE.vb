@@ -7,7 +7,6 @@ Public Class employeeE
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
-        Dim employee = New employeedasboard
-        employee.Show()
+
     End Sub
 End Class

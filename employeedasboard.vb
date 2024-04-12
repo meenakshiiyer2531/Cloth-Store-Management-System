@@ -3,7 +3,7 @@ Imports System.Drawing.Printing
 Imports MySql.Data.MySqlClient
 
 Public Class employeedasboard
-    Dim connectionString As String = "server=localhost;user id=root;password=your_password;database=your_database"
+    Dim connectionString As String = "Server=localhost; user id= vmi; password=meenu2002; database=vmi"
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         MessageBox.Show("Do you want to discard the changes?", "Back", MessageBoxButtons.YesNo)
@@ -13,19 +13,19 @@ Public Class employeedasboard
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Hide()
+
         Dim customer = New customerE
         customer.Show()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Hide()
+
         Dim product = New productE
         product.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.Hide()
+
         Dim employee = New employeeE
         employee.Show()
     End Sub

@@ -23,13 +23,14 @@ Partial Class Splash
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Splash))
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Splash))
         username = New RichTextBox()
         password = New RichTextBox()
         Button1 = New Button()
         Label1 = New Label()
-        MyProgressBar = New ProgressBar()
         Timer1 = New Timer(components)
+        Guna2CircleProgressBar1 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         SuspendLayout()
         ' 
         ' username
@@ -70,23 +71,30 @@ Partial Class Splash
         Label1.BackColor = Color.Teal
         Label1.Font = New Font("Algerian", 48F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.ForeColor = Color.Gold
-        Label1.Location = New Point(261, 417)
+        Label1.Location = New Point(312, 417)
         Label1.Name = "Label1"
         Label1.Size = New Size(436, 71)
         Label1.TabIndex = 4
         Label1.Text = "MADE BY VMI"
         ' 
-        ' MyProgressBar
-        ' 
-        MyProgressBar.Cursor = Cursors.AppStarting
-        MyProgressBar.ForeColor = Color.FromArgb(CByte(192), CByte(192), CByte(0))
-        MyProgressBar.Location = New Point(224, 259)
-        MyProgressBar.Name = "MyProgressBar"
-        MyProgressBar.Size = New Size(555, 42)
-        MyProgressBar.TabIndex = 3
-        ' 
         ' Timer1
         ' 
+        ' 
+        ' Guna2CircleProgressBar1
+        ' 
+        Guna2CircleProgressBar1.FillColor = Color.FromArgb(CByte(200), CByte(213), CByte(218), CByte(223))
+        Guna2CircleProgressBar1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Guna2CircleProgressBar1.ForeColor = Color.Transparent
+        Guna2CircleProgressBar1.Location = New Point(449, 210)
+        Guna2CircleProgressBar1.Minimum = 0
+        Guna2CircleProgressBar1.Name = "Guna2CircleProgressBar1"
+        Guna2CircleProgressBar1.ProgressColor = Color.Gold
+        Guna2CircleProgressBar1.ProgressColor2 = Color.PaleGoldenrod
+        Guna2CircleProgressBar1.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        Guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Guna2CircleProgressBar1.Size = New Size(149, 149)
+        Guna2CircleProgressBar1.TabIndex = 5
+        Guna2CircleProgressBar1.Text = "Guna2CircleProgressBar1"
         ' 
         ' Splash
         ' 
@@ -96,8 +104,8 @@ Partial Class Splash
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(980, 624)
+        Controls.Add(Guna2CircleProgressBar1)
         Controls.Add(Label1)
-        Controls.Add(MyProgressBar)
         Controls.Add(Button1)
         Controls.Add(password)
         Controls.Add(username)
@@ -114,6 +122,6 @@ Partial Class Splash
     Friend WithEvents password As RichTextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents MyProgressBar As ProgressBar
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Guna2CircleProgressBar1 As Guna.UI2.WinForms.Guna2CircleProgressBar
 End Class

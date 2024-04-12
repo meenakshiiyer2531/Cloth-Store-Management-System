@@ -39,6 +39,7 @@ Partial Class employeedasboard
         DataGridView1 = New DataGridView()
         Button6 = New Button()
         PrintDocument1 = New Printing.PrintDocument()
+        Label1 = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -57,17 +58,17 @@ Partial Class employeedasboard
         ' 
         Button4.BackColor = Color.Gold
         Button4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button4.Location = New Point(87, 579)
+        Button4.Location = New Point(118, 700)
         Button4.Name = "Button4"
         Button4.Size = New Size(269, 33)
         Button4.TabIndex = 34
-        Button4.Text = "PRINT PREVIEW"
+        Button4.Text = "BILL SAVE & MESSAGE"
         Button4.UseVisualStyleBackColor = False
         ' 
         ' TextBox9
         ' 
         TextBox9.BackColor = Color.Teal
-        TextBox9.Location = New Point(336, 243)
+        TextBox9.Location = New Point(443, 299)
         TextBox9.Name = "TextBox9"
         TextBox9.Size = New Size(270, 23)
         TextBox9.TabIndex = 33
@@ -75,7 +76,7 @@ Partial Class employeedasboard
         ' TextBox8
         ' 
         TextBox8.BackColor = Color.Teal
-        TextBox8.Location = New Point(336, 142)
+        TextBox8.Location = New Point(443, 175)
         TextBox8.Name = "TextBox8"
         TextBox8.Size = New Size(270, 23)
         TextBox8.TabIndex = 32
@@ -83,7 +84,7 @@ Partial Class employeedasboard
         ' TextBox7
         ' 
         TextBox7.BackColor = Color.Teal
-        TextBox7.Location = New Point(337, 193)
+        TextBox7.Location = New Point(443, 232)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(270, 23)
         TextBox7.TabIndex = 31
@@ -91,7 +92,7 @@ Partial Class employeedasboard
         ' TextBox6
         ' 
         TextBox6.BackColor = Color.Teal
-        TextBox6.Location = New Point(336, 297)
+        TextBox6.Location = New Point(443, 363)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(270, 23)
         TextBox6.TabIndex = 30
@@ -99,7 +100,7 @@ Partial Class employeedasboard
         ' TextBox5
         ' 
         TextBox5.BackColor = Color.Teal
-        TextBox5.Location = New Point(336, 357)
+        TextBox5.Location = New Point(443, 419)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(270, 23)
         TextBox5.TabIndex = 29
@@ -107,7 +108,7 @@ Partial Class employeedasboard
         ' TextBox4
         ' 
         TextBox4.BackColor = Color.Teal
-        TextBox4.Location = New Point(336, 410)
+        TextBox4.Location = New Point(443, 489)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(270, 23)
         TextBox4.TabIndex = 28
@@ -115,7 +116,7 @@ Partial Class employeedasboard
         ' TextBox2
         ' 
         TextBox2.BackColor = Color.Teal
-        TextBox2.Location = New Point(336, 468)
+        TextBox2.Location = New Point(443, 552)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(270, 23)
         TextBox2.TabIndex = 27
@@ -123,7 +124,7 @@ Partial Class employeedasboard
         ' TextBox1
         ' 
         TextBox1.BackColor = Color.Teal
-        TextBox1.Location = New Point(337, 521)
+        TextBox1.Location = New Point(443, 621)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(270, 23)
         TextBox1.TabIndex = 26
@@ -132,7 +133,7 @@ Partial Class employeedasboard
         ' 
         Button2.BackColor = Color.Gold
         Button2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button2.Location = New Point(654, 233)
+        Button2.Location = New Point(721, 299)
         Button2.Name = "Button2"
         Button2.Size = New Size(89, 33)
         Button2.TabIndex = 36
@@ -143,7 +144,7 @@ Partial Class employeedasboard
         ' 
         Button3.BackColor = Color.Gold
         Button3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button3.Location = New Point(654, 297)
+        Button3.Location = New Point(721, 353)
         Button3.Name = "Button3"
         Button3.Size = New Size(89, 33)
         Button3.TabIndex = 37
@@ -154,7 +155,7 @@ Partial Class employeedasboard
         ' 
         Button5.BackColor = Color.Gold
         Button5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button5.Location = New Point(654, 349)
+        Button5.Location = New Point(721, 411)
         Button5.Name = "Button5"
         Button5.Size = New Size(89, 33)
         Button5.TabIndex = 38
@@ -166,18 +167,18 @@ Partial Class employeedasboard
         DataGridView1.AllowUserToAddRows = False
         DataGridView1.AllowUserToDeleteRows = False
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(802, 57)
+        DataGridView1.Location = New Point(824, 119)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
         DataGridView1.RowTemplate.Height = 25
-        DataGridView1.Size = New Size(289, 564)
+        DataGridView1.Size = New Size(701, 564)
         DataGridView1.TabIndex = 39
         ' 
         ' Button6
         ' 
         Button6.BackColor = Color.Gold
         Button6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button6.Location = New Point(526, 579)
+        Button6.Location = New Point(588, 700)
         Button6.Name = "Button6"
         Button6.Size = New Size(174, 33)
         Button6.TabIndex = 40
@@ -187,13 +188,26 @@ Partial Class employeedasboard
         ' PrintDocument1
         ' 
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = Color.Teal
+        Label1.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.Gold
+        Label1.Location = New Point(355, 616)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(82, 25)
+        Label1.TabIndex = 41
+        Label1.Text = "(MODE)"
+        ' 
         ' employeedasboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1116, 649)
+        ClientSize = New Size(1587, 761)
+        Controls.Add(Label1)
         Controls.Add(Button6)
         Controls.Add(DataGridView1)
         Controls.Add(Button5)
@@ -233,4 +247,5 @@ Partial Class employeedasboard
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button6 As Button
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents Label1 As Label
 End Class
