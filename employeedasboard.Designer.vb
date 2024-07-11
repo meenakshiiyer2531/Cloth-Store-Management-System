@@ -40,6 +40,7 @@ Partial Class employeedasboard
         Button6 = New Button()
         PrintDocument1 = New Printing.PrintDocument()
         Label1 = New Label()
+        Button7 = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -58,7 +59,7 @@ Partial Class employeedasboard
         ' 
         Button4.BackColor = Color.Gold
         Button4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button4.Location = New Point(118, 700)
+        Button4.Location = New Point(42, 700)
         Button4.Name = "Button4"
         Button4.Size = New Size(269, 33)
         Button4.TabIndex = 34
@@ -178,7 +179,7 @@ Partial Class employeedasboard
         ' 
         Button6.BackColor = Color.Gold
         Button6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Button6.Location = New Point(588, 700)
+        Button6.Location = New Point(648, 700)
         Button6.Name = "Button6"
         Button6.Size = New Size(174, 33)
         Button6.TabIndex = 40
@@ -200,6 +201,18 @@ Partial Class employeedasboard
         Label1.TabIndex = 41
         Label1.Text = "(MODE)"
         ' 
+        ' Button7
+        ' 
+        Button7.BackColor = Color.SeaGreen
+        Button7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Button7.ForeColor = SystemColors.ButtonHighlight
+        Button7.Location = New Point(397, 700)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(174, 33)
+        Button7.TabIndex = 42
+        Button7.Text = "WHATSAPP"
+        Button7.UseVisualStyleBackColor = False
+        ' 
         ' employeedasboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -207,6 +220,7 @@ Partial Class employeedasboard
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1587, 761)
+        Controls.Add(Button7)
         Controls.Add(Label1)
         Controls.Add(Button6)
         Controls.Add(DataGridView1)
@@ -248,4 +262,5 @@ Partial Class employeedasboard
     Friend WithEvents Button6 As Button
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button7 As Button
 End Class

@@ -53,14 +53,14 @@ Public Class employeedasboard
         Try
             create("INSERT INTO `show` (showId,date,customerId1,productId1,employeeId1,quantity,price,payment) VALUES('" & TextBox8.Text & "','" & TextBox7.Text & "','" & TextBox9.Text & "','" & TextBox6.Text & "','" & TextBox5.Text & "','" & TextBox4.Text & "','" & TextBox2.Text & "','" & TextBox1.Text & "')")
             create("INSERT INTO sales(salesId,date,customerId,productId,employeeId,quantity,price,payment) VALUES('" & TextBox8.Text & "','" & TextBox7.Text & "','" & TextBox9.Text & "','" & TextBox6.Text & "','" & TextBox5.Text & "','" & TextBox4.Text & "','" & TextBox2.Text & "','" & TextBox1.Text & "')")
-            TextBox8.Clear()
-            TextBox7.Clear()
-            TextBox9.Clear()
-            TextBox6.Clear()
-            TextBox5.Clear()
-            TextBox4.Clear()
-            TextBox2.Clear()
-            TextBox1.Clear()
+            TextBox8.Clear
+            TextBox7.Clear
+            TextBox9.Clear
+            TextBox6.Clear
+            TextBox5.Clear
+            TextBox4.Clear
+            TextBox2.Clear
+            TextBox1.Clear
             reload("SELECT * FROM `show`", DataGridView1)
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -154,5 +154,26 @@ Public Class employeedasboard
         Dim totalAmountX As Single = centerPos - totalAmountSize.Width / 2
         Dim totalAmountY As Single = yPos + 30 ' Position the total amount below the dotted line
         e.Graphics.DrawString(totalAmountString, totalAmountFont, Brushes.Black, totalAmountX, totalAmountY)
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim phoneNumber As String = InputBox("Enter the phone number:", "WhatsApp")
+
+        If Not String.IsNullOrWhiteSpace(phoneNumber) Then
+            ' Remove non-digit characters from the phone number
+            phoneNumber = New String(phoneNumber.Where(AddressOf Char.IsDigit).ToArray())
+
+            If phoneNumber.Length > 0 Then
+                Dim whatsappUrl As String = $"https://wa.me/+91{phoneNumber}"
+                Process.Start(New ProcessStartInfo(whatsappUrl) With {.UseShellExecute = True})
+            Else
+                MessageBox.Show("Please enter a valid phone number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        End If
+
+    End Sub
+
+    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
+
     End Sub
 End Class
